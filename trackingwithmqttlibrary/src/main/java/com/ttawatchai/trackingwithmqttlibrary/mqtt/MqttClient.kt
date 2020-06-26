@@ -4,7 +4,6 @@ import android.content.Context
 import android.util.Log
 
 import com.google.gson.Gson
-import com.google.gson.GsonBuilder
 import com.ttawatchai.trackingwithmqttlibrary.mqtt.model.MqttResponse
 import io.nlopez.smartlocation.SmartLocation
 import org.eclipse.paho.android.service.MqttAndroidClient
@@ -18,7 +17,6 @@ class MqttClien(private val context: Context ,config: String) {
 
     companion object {
         const val TAG = "MQTT"
-        const val TOPIC_SPEED = "overspeed"
     }
 
     init {
